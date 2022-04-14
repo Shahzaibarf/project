@@ -8,7 +8,6 @@ import Link from 'next/link'
 import axios from 'axios'
 
 const DoctorDetails = () => {
-	console.log('.......................................', process.env.REACT_APP_SERVER_URL)
 	// state
 	const [startDate, setStartDate] = useState(new Date())
 	const [doctor, setDoctor] = useState(null)
@@ -23,8 +22,6 @@ const DoctorDetails = () => {
 		let doctor = await axios.get(`http://localhost:4000/doctor/6257251e09b7e9d19fdf2ec6`, header)
 		setDoctor(doctor?.data)
 	}, [])
-
-	console.log('doctor....................................................', doctor)
 
 	return (
 		<>
