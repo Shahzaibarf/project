@@ -40,6 +40,7 @@ const DoctorDetails = () => {
 										<li>
 											<a href="https://www.facebook.com/" target="_blank">
 												<i className="bx bxl-facebook"></i>
+												<i></i>
 											</a>
 										</li>
 										<li>
